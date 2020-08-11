@@ -1,25 +1,13 @@
 #include<stdio.h>
 int main()
 {
-	int age;
-	printf("Please Enter Your Age : ");
-	scanf_s("%d", &age);
-
-	if (age <= 11)
+int num, x;
+	printf("- Multiplication Table -\n");
+	printf("Please Enter Number : ");
+	scanf_s("%d", &num);
+	for (x = 1; x <= 12; x++)
 	{
-		printf("%d -> Kid", age);
-	}
-	else if (age <= 20)
-	{
-		printf("%d -> Teen", age);
-	}
-	else if (age <= 60)
-	{
-		printf("%d -> Adult", age);
-	}
-	else
-	{
-		printf("%d -> Old", age);
+		printf("\n%d * %d = %d", num, x, num * x);
 	}
 	return 0;
 }
