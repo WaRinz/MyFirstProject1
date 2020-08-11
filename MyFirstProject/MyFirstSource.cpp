@@ -9,5 +9,6 @@ int num, x;
 	{
 		printf("\n%d * %d = %d", num, x, num * x);
 	}
+	printf("\n--- END ---");
 	return 0;
 }
